@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4726887270EA1F087306080D3DE6CA91 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 328FF25273AEE56F46F0E0076B9687A6 /* Pods-dummy.m */; };
+		4E00B88F5FCBBB307983B4829C27AC78 /* HexColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B401AC2C7972F7D1FB968470ACFD8A3 /* HexColors-dummy.m */; };
+		58E780A233AA1516705DFD664D47397A /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1191E08E1EE7803F99779D8B8D42B /* UIImage+ColorAtPixel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5CC63C9812C59522AD828FFB20A2827E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51821518B3BA48C1566BD20792FC552 /* Foundation.framework */; };
+		5F5B486EF604775A1BC4DF97C6BDF366 /* TPPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 823AF0392A203A4966242094E833237C /* TPPropertyAnimation.h */; };
+		6185338188E3295D5D36388C30ECE392 /* KAProgressLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4073F77B72660B8A462F6DD612020168 /* KAProgressLabel-dummy.m */; };
+		6BCB581F19057121E777F95F84B9265B /* OBShapedButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 400257B208CBF1F8623DE3DF7AD99B6F /* OBShapedButton-dummy.m */; };
+		782D6D057DE663A47BA6C3319A75C2C9 /* HexColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 53F227752DD865F07D52E53FD65E4823 /* HexColors.h */; };
+		7C5D3217A8ACA9261525CB156AF60224 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51821518B3BA48C1566BD20792FC552 /* Foundation.framework */; };
+		9483EC9B2E67ED07F74B0C857D55EDD7 /* KAProgressLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = F66E284F6321101903A52D13C2AB9985 /* KAProgressLabel.h */; };
+		9728444448F73E4879C93567218AF90E /* OBShapedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6621958E7700A90E2375AE6CF36AAC32 /* OBShapedButton.h */; };
+		9771F9EA13D49FE35A04B2D7590F4DEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51821518B3BA48C1566BD20792FC552 /* Foundation.framework */; };
+		AE3B4233BD5DA582BC99F54429BAF861 /* UIImage+ColorAtPixel.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BDE19A2CCFFBFCD6BBCB2D47C664FD /* UIImage+ColorAtPixel.h */; };
+		B5791E82FB49E58E3B35CCC8D6F053B4 /* TPPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB44258DAED8671D7423D7DC056DE691 /* TPPropertyAnimation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B66D4DFE57D0AD36D2CF2A6358D7BF97 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA8D30001E7C6018F5ECA30F7E94D88 /* QuartzCore.framework */; };
+		BA7DE0EF7002DC2EEB391A33961908F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51821518B3BA48C1566BD20792FC552 /* Foundation.framework */; };
+		C85ABA78707F9D8F0EACC6C775202376 /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AD5962621C446CD46BFAFC48E7D13E /* HexColors.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E7411945321BD632EB5B398DF0719B99 /* KAProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B451C55C4E4778D7302D4EFF401833 /* KAProgressLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EF414D4E293FA609CBE92333E0001853 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1416A01C053F2BCA34BF8B48A81DCDED /* OBShapedButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1650B5B4B2233B2B852791E351EE05C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9A12FC915E38773F4A183B80BD1C989;
+			remoteInfo = OBShapedButton;
+		};
+		9B8E0D2C2CC1783C904AAB385EDD95F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8A5F7B4655D72129B8225CF0274A71D;
+			remoteInfo = HexColors;
+		};
+		B16A76B7BAC9E18231D5BC9D19A9AFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92555742A39211B1DE839A28CB66D075;
+			remoteInfo = KAProgressLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F99D33F668F266B65A1076BBE1CB980 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		10B451C55C4E4778D7302D4EFF401833 /* KAProgressLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KAProgressLabel.m; path = KAProgressLabel/KAProgressLabel.m; sourceTree = "<group>"; };
+		11AD5962621C446CD46BFAFC48E7D13E /* HexColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HexColors.m; path = Classes/HexColors.m; sourceTree = "<group>"; };
+		1416A01C053F2BCA34BF8B48A81DCDED /* OBShapedButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OBShapedButton.m; path = OBShapedButton/OBShapedButton.m; sourceTree = "<group>"; };
+		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		15C41F7DCA99EC3DC9FF59E2BCDFB7F3 /* HexColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HexColors-prefix.pch"; sourceTree = "<group>"; };
+		1856317A2C9BE57DA40EAA14748677E7 /* HexColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HexColors.xcconfig; sourceTree = "<group>"; };
+		1B401AC2C7972F7D1FB968470ACFD8A3 /* HexColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HexColors-dummy.m"; sourceTree = "<group>"; };
+		2C47A1124AE047AA2606D28E751DD8E8 /* KAProgressLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KAProgressLabel-prefix.pch"; sourceTree = "<group>"; };
+		328FF25273AEE56F46F0E0076B9687A6 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		34D0FD5F828C48E41BF03AAFA2792B7B /* libOBShapedButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOBShapedButton.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		35A2DE9DB8E0F4D4ECA3C1445EF12D60 /* OBShapedButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OBShapedButton.xcconfig; sourceTree = "<group>"; };
+		400257B208CBF1F8623DE3DF7AD99B6F /* OBShapedButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OBShapedButton-dummy.m"; sourceTree = "<group>"; };
+		4073F77B72660B8A462F6DD612020168 /* KAProgressLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KAProgressLabel-dummy.m"; sourceTree = "<group>"; };
+		4B152839C7AD55F060FBCDA794D72189 /* libHexColors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHexColors.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B83B017D8496F291DB41EA55B9AD7E2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F7EB2ED59296F32B3BF1C17E542AB27 /* OBShapedButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OBShapedButton-prefix.pch"; sourceTree = "<group>"; };
+		53F227752DD865F07D52E53FD65E4823 /* HexColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HexColors.h; path = Classes/HexColors.h; sourceTree = "<group>"; };
+		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		6621958E7700A90E2375AE6CF36AAC32 /* OBShapedButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OBShapedButton.h; path = OBShapedButton/OBShapedButton.h; sourceTree = "<group>"; };
+		751600C1EF8F9AF5AF4C4DD88FAC7C10 /* OBShapedButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OBShapedButton-Private.xcconfig"; sourceTree = "<group>"; };
+		823AF0392A203A4966242094E833237C /* TPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPPropertyAnimation.h; path = KAProgressLabel/TPPropertyAnimation.h; sourceTree = "<group>"; };
+		88D24C499DA6BFA9F7E8AC32E6DE5C5D /* HexColors-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "HexColors-Private.xcconfig"; sourceTree = "<group>"; };
+		93A1191E08E1EE7803F99779D8B8D42B /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ColorAtPixel.m"; path = "UIImage+ColorAtPixel/UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
+		A6BDE19A2CCFFBFCD6BBCB2D47C664FD /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ColorAtPixel.h"; path = "UIImage+ColorAtPixel/UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		AB44258DAED8671D7423D7DC056DE691 /* TPPropertyAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPPropertyAnimation.m; path = KAProgressLabel/TPPropertyAnimation.m; sourceTree = "<group>"; };
+		ADA8D30001E7C6018F5ECA30F7E94D88 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		C6339FAB1CE1E56490666592613EB1F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		D19C92850A76B7F9D57AC3FAACA13EC6 /* KAProgressLabel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "KAProgressLabel-Private.xcconfig"; sourceTree = "<group>"; };
+		E2099F8B332AE8C63ACBDAEB6D4AEB75 /* libKAProgressLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKAProgressLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51821518B3BA48C1566BD20792FC552 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F66E284F6321101903A52D13C2AB9985 /* KAProgressLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KAProgressLabel.h; path = KAProgressLabel/KAProgressLabel.h; sourceTree = "<group>"; };
+		FAC56B9B399CC5E7070C63DA1ADA3705 /* KAProgressLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KAProgressLabel.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		258AEBE9BACEE61596F225D256C27C6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C5D3217A8ACA9261525CB156AF60224 /* Foundation.framework in Frameworks */,
+				B66D4DFE57D0AD36D2CF2A6358D7BF97 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		522C4A0D093E850BC96B335609EF5CB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9771F9EA13D49FE35A04B2D7590F4DEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960FA0F77ECA76905CBCAC119B8105BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CC63C9812C59522AD828FFB20A2827E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8CC06625499C994B4432C10DD9D0E61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7DE0EF7002DC2EEB391A33961908F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00FC04B06EEF8A155D545C321FDCC389 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F51821518B3BA48C1566BD20792FC552 /* Foundation.framework */,
+				ADA8D30001E7C6018F5ECA30F7E94D88 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		39248D7C18A26E20ED7AB8F5EE05F152 /* KAProgressLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F66E284F6321101903A52D13C2AB9985 /* KAProgressLabel.h */,
+				10B451C55C4E4778D7302D4EFF401833 /* KAProgressLabel.m */,
+				823AF0392A203A4966242094E833237C /* TPPropertyAnimation.h */,
+				AB44258DAED8671D7423D7DC056DE691 /* TPPropertyAnimation.m */,
+				85852C36CC92FFC62C7BA092FEB334CD /* Support Files */,
+			);
+			path = KAProgressLabel;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00FC04B06EEF8A155D545C321FDCC389 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70C2401CD6540B9CA2E34EC5CAB27BD2 /* OBShapedButton */ = {
+			isa = PBXGroup;
+			children = (
+				6621958E7700A90E2375AE6CF36AAC32 /* OBShapedButton.h */,
+				1416A01C053F2BCA34BF8B48A81DCDED /* OBShapedButton.m */,
+				A6BDE19A2CCFFBFCD6BBCB2D47C664FD /* UIImage+ColorAtPixel.h */,
+				93A1191E08E1EE7803F99779D8B8D42B /* UIImage+ColorAtPixel.m */,
+				F321F64D044E33197020B06F677E90A2 /* Support Files */,
+			);
+			path = OBShapedButton;
+			sourceTree = "<group>";
+		};
+		77FFBFD686BE9EBD4D828FB6F18A2737 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1856317A2C9BE57DA40EAA14748677E7 /* HexColors.xcconfig */,
+				88D24C499DA6BFA9F7E8AC32E6DE5C5D /* HexColors-Private.xcconfig */,
+				1B401AC2C7972F7D1FB968470ACFD8A3 /* HexColors-dummy.m */,
+				15C41F7DCA99EC3DC9FF59E2BCDFB7F3 /* HexColors-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HexColors";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				DE9E1E8132BD69BBBE5ADD6FE59C551D /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		85852C36CC92FFC62C7BA092FEB334CD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAC56B9B399CC5E7070C63DA1ADA3705 /* KAProgressLabel.xcconfig */,
+				D19C92850A76B7F9D57AC3FAACA13EC6 /* KAProgressLabel-Private.xcconfig */,
+				4073F77B72660B8A462F6DD612020168 /* KAProgressLabel-dummy.m */,
+				2C47A1124AE047AA2606D28E751DD8E8 /* KAProgressLabel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KAProgressLabel";
+			sourceTree = "<group>";
+		};
+		952EEBFAF8F7E620423C9F156F25A506 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */,
+				BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */,
+				328FF25273AEE56F46F0E0076B9687A6 /* Pods-dummy.m */,
+				641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */,
+				C6339FAB1CE1E56490666592613EB1F0 /* Pods.debug.xcconfig */,
+				0F99D33F668F266B65A1076BBE1CB980 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		B55D8ED6EE56E128ACECBAEF71B0443E /* HexColors */ = {
+			isa = PBXGroup;
+			children = (
+				53F227752DD865F07D52E53FD65E4823 /* HexColors.h */,
+				11AD5962621C446CD46BFAFC48E7D13E /* HexColors.m */,
+				77FFBFD686BE9EBD4D828FB6F18A2737 /* Support Files */,
+			);
+			path = HexColors;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B152839C7AD55F060FBCDA794D72189 /* libHexColors.a */,
+				E2099F8B332AE8C63ACBDAEB6D4AEB75 /* libKAProgressLabel.a */,
+				34D0FD5F828C48E41BF03AAFA2792B7B /* libOBShapedButton.a */,
+				4B83B017D8496F291DB41EA55B9AD7E2 /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				952EEBFAF8F7E620423C9F156F25A506 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DE9E1E8132BD69BBBE5ADD6FE59C551D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B55D8ED6EE56E128ACECBAEF71B0443E /* HexColors */,
+				39248D7C18A26E20ED7AB8F5EE05F152 /* KAProgressLabel */,
+				70C2401CD6540B9CA2E34EC5CAB27BD2 /* OBShapedButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F321F64D044E33197020B06F677E90A2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35A2DE9DB8E0F4D4ECA3C1445EF12D60 /* OBShapedButton.xcconfig */,
+				751600C1EF8F9AF5AF4C4DD88FAC7C10 /* OBShapedButton-Private.xcconfig */,
+				400257B208CBF1F8623DE3DF7AD99B6F /* OBShapedButton-dummy.m */,
+				4F7EB2ED59296F32B3BF1C17E542AB27 /* OBShapedButton-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OBShapedButton";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A75EE38095D8A7EC8648436B63CD5D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9728444448F73E4879C93567218AF90E /* OBShapedButton.h in Headers */,
+				AE3B4233BD5DA582BC99F54429BAF861 /* UIImage+ColorAtPixel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2312DB5CD5D0CA72654DC15BE716B00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9483EC9B2E67ED07F74B0C857D55EDD7 /* KAProgressLabel.h in Headers */,
+				5F5B486EF604775A1BC4DF97C6BDF366 /* TPPropertyAnimation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E03987DB709BF8A972E206D019D73479 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				782D6D057DE663A47BA6C3319A75C2C9 /* HexColors.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D84DF9F794D14BA0C2F66DA0CAB53DB /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F1B29E8B6C642F9A563988A6C02265B /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				B9EAC256254E26307380672706BDEFF6 /* Sources */,
+				960FA0F77ECA76905CBCAC119B8105BE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51E8E615CBFCF85ADA1D11A8E401EBD0 /* PBXTargetDependency */,
+				7BC6CD5BE23E338837EC3FF0AA7BE7EF /* PBXTargetDependency */,
+				783422CC9EF8DA4C04FEA754EC64EBEF /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 4B83B017D8496F291DB41EA55B9AD7E2 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		92555742A39211B1DE839A28CB66D075 /* KAProgressLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C6DA689D06BCD5293D63FFD2F44B958 /* Build configuration list for PBXNativeTarget "KAProgressLabel" */;
+			buildPhases = (
+				17E5F01AE915CAE8940916B6CF1D937C /* Sources */,
+				258AEBE9BACEE61596F225D256C27C6D /* Frameworks */,
+				A2312DB5CD5D0CA72654DC15BE716B00 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KAProgressLabel;
+			productName = KAProgressLabel;
+			productReference = E2099F8B332AE8C63ACBDAEB6D4AEB75 /* libKAProgressLabel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E9A12FC915E38773F4A183B80BD1C989 /* OBShapedButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39C4E359878098C6F6095C9939D446B /* Build configuration list for PBXNativeTarget "OBShapedButton" */;
+			buildPhases = (
+				62955B6FF361E134F6D2C151F38D9F48 /* Sources */,
+				D8CC06625499C994B4432C10DD9D0E61 /* Frameworks */,
+				1A75EE38095D8A7EC8648436B63CD5D8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OBShapedButton;
+			productName = OBShapedButton;
+			productReference = 34D0FD5F828C48E41BF03AAFA2792B7B /* libOBShapedButton.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F8A5F7B4655D72129B8225CF0274A71D /* HexColors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5037EAC7263D338FCF50831C2520593C /* Build configuration list for PBXNativeTarget "HexColors" */;
+			buildPhases = (
+				D196E5ECE2B7D95E82031E6C0CB33676 /* Sources */,
+				522C4A0D093E850BC96B335609EF5CB3 /* Frameworks */,
+				E03987DB709BF8A972E206D019D73479 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HexColors;
+			productName = HexColors;
+			productReference = 4B152839C7AD55F060FBCDA794D72189 /* libHexColors.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8A5F7B4655D72129B8225CF0274A71D /* HexColors */,
+				92555742A39211B1DE839A28CB66D075 /* KAProgressLabel */,
+				E9A12FC915E38773F4A183B80BD1C989 /* OBShapedButton */,
+				5D84DF9F794D14BA0C2F66DA0CAB53DB /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17E5F01AE915CAE8940916B6CF1D937C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6185338188E3295D5D36388C30ECE392 /* KAProgressLabel-dummy.m in Sources */,
+				E7411945321BD632EB5B398DF0719B99 /* KAProgressLabel.m in Sources */,
+				B5791E82FB49E58E3B35CCC8D6F053B4 /* TPPropertyAnimation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62955B6FF361E134F6D2C151F38D9F48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BCB581F19057121E777F95F84B9265B /* OBShapedButton-dummy.m in Sources */,
+				EF414D4E293FA609CBE92333E0001853 /* OBShapedButton.m in Sources */,
+				58E780A233AA1516705DFD664D47397A /* UIImage+ColorAtPixel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9EAC256254E26307380672706BDEFF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4726887270EA1F087306080D3DE6CA91 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D196E5ECE2B7D95E82031E6C0CB33676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E00B88F5FCBBB307983B4829C27AC78 /* HexColors-dummy.m in Sources */,
+				C85ABA78707F9D8F0EACC6C775202376 /* HexColors.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51E8E615CBFCF85ADA1D11A8E401EBD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HexColors;
+			target = F8A5F7B4655D72129B8225CF0274A71D /* HexColors */;
+			targetProxy = 9B8E0D2C2CC1783C904AAB385EDD95F7 /* PBXContainerItemProxy */;
+		};
+		783422CC9EF8DA4C04FEA754EC64EBEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OBShapedButton;
+			target = E9A12FC915E38773F4A183B80BD1C989 /* OBShapedButton */;
+			targetProxy = 1650B5B4B2233B2B852791E351EE05C9 /* PBXContainerItemProxy */;
+		};
+		7BC6CD5BE23E338837EC3FF0AA7BE7EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KAProgressLabel;
+			target = 92555742A39211B1DE839A28CB66D075 /* KAProgressLabel */;
+			targetProxy = B16A76B7BAC9E18231D5BC9D19A9AFCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		126584002E4E7720ED40FD04F1AEF508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D19C92850A76B7F9D57AC3FAACA13EC6 /* KAProgressLabel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KAProgressLabel/KAProgressLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		21ABBC70771EAB584F26449B872FC9B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F99D33F668F266B65A1076BBE1CB980 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7EFA4D9D0143962D9DD8C2230028CBD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88D24C499DA6BFA9F7E8AC32E6DE5C5D /* HexColors-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HexColors/HexColors-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7FB5783D8D2BCB5178186D819CE7F870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6339FAB1CE1E56490666592613EB1F0 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		857AB4E5058111FA9E3CF720DC9A6571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751600C1EF8F9AF5AF4C4DD88FAC7C10 /* OBShapedButton-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OBShapedButton/OBShapedButton-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D1D2C0558508A809991DF808E607EECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D19C92850A76B7F9D57AC3FAACA13EC6 /* KAProgressLabel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KAProgressLabel/KAProgressLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F1AC0DFDE672DDAE995EAF72C3493702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88D24C499DA6BFA9F7E8AC32E6DE5C5D /* HexColors-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HexColors/HexColors-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F35114974A510BA7AA758BF26853FAAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751600C1EF8F9AF5AF4C4DD88FAC7C10 /* OBShapedButton-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OBShapedButton/OBShapedButton-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5037EAC7263D338FCF50831C2520593C /* Build configuration list for PBXNativeTarget "HexColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EFA4D9D0143962D9DD8C2230028CBD7 /* Debug */,
+				F1AC0DFDE672DDAE995EAF72C3493702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C6DA689D06BCD5293D63FFD2F44B958 /* Build configuration list for PBXNativeTarget "KAProgressLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1D2C0558508A809991DF808E607EECA /* Debug */,
+				126584002E4E7720ED40FD04F1AEF508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F1B29E8B6C642F9A563988A6C02265B /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB5783D8D2BCB5178186D819CE7F870 /* Debug */,
+				21ABBC70771EAB584F26449B872FC9B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A39C4E359878098C6F6095C9939D446B /* Build configuration list for PBXNativeTarget "OBShapedButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F35114974A510BA7AA758BF26853FAAA /* Debug */,
+				857AB4E5058111FA9E3CF720DC9A6571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

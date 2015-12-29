@@ -1,0 +1,16 @@
+PODS:
+  - HexColors (3.0.0)
+  - KAProgressLabel (3.2)
+  - OBShapedButton (1.0.2)
+
+DEPENDENCIES:
+  - HexColors
+  - KAProgressLabel
+  - OBShapedButton
+
+SPEC CHECKSUMS:
+  HexColors: 8b83e3fe90c0d466dae7b98c9d22da95799f99cb
+  KAProgressLabel: 4362a1d37c5a7bc7c10cd059fd2da7cb9599cb50
+  OBShapedButton: ae2ae40dd98b934d4f76be1984c49db73893ada9
+
+COCOAPODS: 0.38.2
