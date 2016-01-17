@@ -22,6 +22,8 @@
 		365F58301C30D0D600B8F5F3 /* table128.png in Resources */ = {isa = PBXBuildFile; fileRef = 365F582F1C30D0D600B8F5F3 /* table128.png */; };
 		365F58361C30DA6E00B8F5F3 /* UIButton+ColorForState.m in Sources */ = {isa = PBXBuildFile; fileRef = 365F58351C30DA6E00B8F5F3 /* UIButton+ColorForState.m */; };
 		365F58381C30E4F000B8F5F3 /* earwhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 365F58371C30E4F000B8F5F3 /* earwhite.png */; };
+		365F58891C4B44E900B8F5F3 /* table128white.png in Resources */ = {isa = PBXBuildFile; fileRef = 365F58881C4B44E900B8F5F3 /* table128white.png */; };
+		365F588D1C4B46E900B8F5F3 /* painter128white.png in Resources */ = {isa = PBXBuildFile; fileRef = 365F588C1C4B46E900B8F5F3 /* painter128white.png */; };
 		36D4276E1C2CDA6F005B35CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D4276D1C2CDA6F005B35CB /* main.m */; };
 		36D427711C2CDA6F005B35CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D427701C2CDA6F005B35CB /* AppDelegate.m */; };
 		36D427771C2CDA6F005B35CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D427751C2CDA6F005B35CB /* Main.storyboard */; };
@@ -74,6 +76,8 @@
 		365F58341C30DA6E00B8F5F3 /* UIButton+ColorForState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ColorForState.h"; sourceTree = "<group>"; };
 		365F58351C30DA6E00B8F5F3 /* UIButton+ColorForState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ColorForState.m"; sourceTree = "<group>"; };
 		365F58371C30E4F000B8F5F3 /* earwhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earwhite.png; sourceTree = "<group>"; };
+		365F58881C4B44E900B8F5F3 /* table128white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table128white.png; sourceTree = "<group>"; };
+		365F588C1C4B46E900B8F5F3 /* painter128white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = painter128white.png; sourceTree = "<group>"; };
 		36D427691C2CDA6F005B35CB /* nback5d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nback5d.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D4276D1C2CDA6F005B35CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		36D4276F1C2CDA6F005B35CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 				36D427AE1C2D853F005B35CB /* circle@2x.png */,
 				36D4276F1C2CDA6F005B35CB /* AppDelegate.h */,
 				36D427701C2CDA6F005B35CB /* AppDelegate.m */,
+				365F588C1C4B46E900B8F5F3 /* painter128white.png */,
 				36D4279F1C2D00CF005B35CB /* ParentViewController.h */,
 				36D427A51C2D028C005B35CB /* PrefixHeader.pch */,
 				36D427A61C2D0342005B35CB /* ActiveGameViewController.h */,
@@ -183,6 +188,7 @@
 				365F58181C2F9C0700B8F5F3 /* table41.png */,
 				365F58291C30BFF300B8F5F3 /* paint32.png */,
 				365F582F1C30D0D600B8F5F3 /* table128.png */,
+				365F58881C4B44E900B8F5F3 /* table128white.png */,
 				365F581E1C30475F00B8F5F3 /* squares77.png */,
 				365F582B1C30BFFE00B8F5F3 /* paint24.png */,
 				365F581C1C2F9C7F00B8F5F3 /* ear1.png */,
@@ -360,10 +366,12 @@
 				36D427791C2CDA6F005B35CB /* Assets.xcassets in Resources */,
 				365F58251C30760600B8F5F3 /* painter6.png in Resources */,
 				36D427771C2CDA6F005B35CB /* Main.storyboard in Resources */,
+				365F588D1C4B46E900B8F5F3 /* painter128white.png in Resources */,
 				36D427AF1C2D853F005B35CB /* circle.png in Resources */,
 				36DF0BD91C2F0B5400439057 /* BebasNeue Thin.ttf in Resources */,
 				365F581D1C2F9C7F00B8F5F3 /* ear1.png in Resources */,
 				365F581B1C2F9C2300B8F5F3 /* paint4.png in Resources */,
+				365F58891C4B44E900B8F5F3 /* table128white.png in Resources */,
 				365F58301C30D0D600B8F5F3 /* table128.png in Resources */,
 				365F582C1C30BFFE00B8F5F3 /* paint24.png in Resources */,
 				36DF0BD51C2F0B5400439057 /* BebasNeue Bold.ttf in Resources */,
