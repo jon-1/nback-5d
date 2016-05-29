@@ -6,9 +6,9 @@
 //  Copyright © 2015 jon-1. All rights reserved.
 //
 
-#import "ParentViewController.h"
+#import "ViewController.h"
 
-@interface ActiveGameViewController : ParentViewController
+@interface ActiveGameViewController : ViewController
 
 @property (assign, nonatomic) NSInteger colorsAmount;
 @property (assign, nonatomic) NSInteger audioAmount;
@@ -16,6 +16,6 @@
 @property (assign, nonatomic) NSInteger symbolsAmount;
 @property (assign, nonatomic) NSInteger nBackAmount;
 @property (assign, nonatomic) CGFloat roundTime;
-@property (assign, nonatomic) NSInteger roundsPerGame;
+@property (assign, nonatomic) NSInteger maxRounds;
 
 @end

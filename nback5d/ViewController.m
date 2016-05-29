@@ -1,19 +1,18 @@
 //
-//  ParentViewController.m
+//  ViewController.m
 //  nback5d
 //
-//  Created by Candy on 12/24/15.
-//  Copyright © 2015 jon-1. All rights reserved.
+//  Created by Candy on 5/28/16.
+//  Copyright © 2016 jon-1. All rights reserved.
 //
 
-#import "ParentViewController.h"
-#import "ColorConstants.h"
+#import "ViewController.h"
 
-@interface ParentViewController ()
+@interface ViewController ()
 
 @end
 
-@implementation ParentViewController
+@implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

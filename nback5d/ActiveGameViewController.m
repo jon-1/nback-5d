@@ -15,28 +15,28 @@
 @interface ActiveGameViewController () <UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>{
     UIButton* triangleButton;
 }
-/**
- *
- */
+
+#pragma mark - Properties
+
 @property (strong, nonatomic) UICollectionView* gridCollectionView;
 @property (strong, nonatomic) UICollectionViewFlowLayout* flowLayout;
 
 @property (strong, nonatomic) UIView* topView;
 @property (strong, nonatomic) UIView* bottomView;
 
-@property (weak, nonatomic) UILabel* nbackNumericLabel;
-@property (weak, nonatomic) UILabel* nbackTextLabel;
+@property (strong, nonatomic) UILabel* nbackNumericLabel;
+@property (strong, nonatomic) UILabel* nbackTextLabel;
 
-@property (weak, nonatomic) UILabel* timerNumericLabel;
+@property (strong, nonatomic) UILabel* timerNumericLabel;
 @property (weak, nonatomic) UIView* outerTimerCircle;
 @property (weak, nonatomic) UIView* innerTimerCircle;
 @property (weak, nonatomic) UIButton* startButton;
 @property (strong, nonatomic) NSTimer* timer;
 @property (strong, nonatomic) KAProgressLabel* timerProgressLabel;
 
-@property (weak, nonatomic) UILabel* myScoreNumericLabel;
-@property (weak, nonatomic) UILabel* myScoreTextLabel;
-@property (weak, nonatomic) UILabel* questionCountLabel;
+@property (strong, nonatomic) UILabel* myScoreNumericLabel;
+@property (strong, nonatomic) UILabel* myScoreTextLabel;
+@property (strong, nonatomic) UILabel* questionCountLabel;
 
 @property (assign, nonatomic) CGFloat marginSize;
 @property (assign, nonatomic) CGFloat fullWidth;
@@ -47,19 +47,24 @@
 @property (strong, nonatomic) UIButton* soundButton;
 @property (strong, nonatomic) UIButton* colorButton;
 @property (strong, nonatomic) UIButton* spaceButton;
-@property (strong, nonatomic) UIButton* symbolButton;
+@property (strong, nonatomic) UIButton* shapeButton;
 
 @property (assign, nonatomic) NSInteger currentRegion;
 @property (strong, nonatomic) NSString* cellIdentifier;
+
+@property (assign, nonatomic) NSInteger roundCounter;
+
 @end
 
-@implementation ActiveGameViewController
+@implementation ActiveGameViewController {
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     
-
+    self.nBackAmount = 3;
     
     _marginSize = 10.0;
     _fullWidth = CGRectGetWidth(self.view.frame) - 2 * _marginSize;
@@ -74,6 +79,12 @@
     [self.view addGestureRecognizer:tap];
     
     [self establishView];
+    for (NSString *familyName in [UIFont familyNames]){
+        NSLog(@"Family name: %@", familyName);
+        for (NSString *fontName in [UIFont fontNamesForFamilyName:familyName]) {
+            NSLog(@"--Font name: %@", fontName);
+        }
+    }
 }
 
 - (void)tapped:(UITapGestureRecognizer *)recognizer
@@ -129,6 +140,40 @@
     [_timerProgressLabel setProgressColor:RED_PEPSI];
     [_timerProgressLabel setFont:[UIFont fontWithName:@"BebasNeueBold" size:55]];
     
+    _nbackNumericLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(_topView.frame)/3, CGRectGetHeight(_topView.frame) - 35)];
+    [_topView addSubview:_nbackNumericLabel];
+    _nbackTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(_nbackNumericLabel.frame) - 5, CGRectGetWidth(_nbackNumericLabel.frame), CGRectGetHeight(_topView.frame) - CGRectGetHeight(_nbackNumericLabel.frame))];
+    [_topView addSubview:_nbackTextLabel];
+    
+    _myScoreTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetWidth(_topView.frame)/3 * 2, 0.0, CGRectGetWidth(_topView.frame)/3, CGRectGetHeight(_topView.frame) * 0.2)];
+    _myScoreNumericLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetWidth(_myScoreTextLabel.frame) * 2, CGRectGetHeight(_myScoreTextLabel.frame), CGRectGetWidth(_myScoreTextLabel.frame),CGRectGetHeight(_topView.frame) * 0.5)];
+    _questionCountLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetWidth(_myScoreTextLabel.frame) * 2, CGRectGetHeight(_myScoreTextLabel.frame) + CGRectGetHeight(_myScoreNumericLabel.frame) - 5, CGRectGetWidth(_myScoreTextLabel.frame),CGRectGetHeight(_topView.frame) * 0.3)];
+    [_topView addSubview:_myScoreTextLabel];
+    [_topView addSubview:_myScoreNumericLabel];
+    [_topView addSubview:_questionCountLabel];
+    [_myScoreNumericLabel setFont:[UIFont fontWithName:@"BebasNeueRegular" size:35]];
+    [_myScoreTextLabel setFont:[UIFont fontWithName:@"BebasNeueBook" size:15]];
+    [_questionCountLabel setFont:[UIFont fontWithName:@"BebasNeueBook" size:20]];
+    
+    
+
+    
+    
+    _myScoreNumericLabel.textAlignment = NSTextAlignmentCenter;
+    _myScoreTextLabel.textAlignment = NSTextAlignmentCenter;
+    _questionCountLabel.textAlignment = NSTextAlignmentCenter;
+    
+    
+    _myScoreNumericLabel.text = @"253";
+    _myScoreTextLabel.text = @"MY SCORE";
+    _questionCountLabel.text = @"4 / 10";
+    
+    _nbackTextLabel.text = @"BACK";
+    [_nbackTextLabel setFont:[UIFont fontWithName:@"BebasNeueBook" size:38]];
+    _nbackNumericLabel.text = [NSString stringWithFormat:@"%ld", (long)self.nBackAmount];
+    _nbackNumericLabel.textAlignment = NSTextAlignmentCenter;
+    _nbackTextLabel.textAlignment = NSTextAlignmentCenter;
+    [_nbackNumericLabel setFont:[UIFont fontWithName:@"BebasNeueBook" size:55]];
     _timer = [NSTimer scheduledTimerWithTimeInterval: 1.0
                                              target: self
                                            selector: @selector(fillTimer:)
@@ -211,9 +256,8 @@
 }
 - (void) fillTimer:(id)sender {
     if (_globalTimer == 0) {
-        [UIView animateWithDuration:1.0 animations:^{
-                [_gridCollectionView reloadData];
-        }];
+
+    [_gridCollectionView reloadData];
 
     }
     _globalTimer += 1;
@@ -221,8 +265,6 @@
     [_timerProgressLabel setText:[NSString stringWithFormat:@"%ld", 11-(long)(_globalTimer)]];
     if (_globalTimer > 9) {
         _globalTimer = 0;
-        
-        
         _currentRegion = arc4random_uniform(8) + 1;
              [(NSTimer*)sender invalidate];
         _timer = [NSTimer scheduledTimerWithTimeInterval: 1.0
@@ -245,7 +287,7 @@
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    NSLog(@"%ld", self.gridAmount)
+    NSLog(@"%ld", (long)self.gridAmount)
     return self.gridAmount;
 }
 
