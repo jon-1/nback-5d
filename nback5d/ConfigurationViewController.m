@@ -7,7 +7,7 @@
 //
 
 #import "ConfigurationViewController.h"
-#import "Game.h"
+#import "GameSettings.h"
 
 const NSInteger spaceBasePts = 250, colorBasePts = 300, soundBasePts = 400;
 const CGFloat penaltyModifier = 3.1;
@@ -30,6 +30,7 @@ const CGFloat penaltyModifier = 3.1;
 @property (strong, nonatomic) IBOutletCollection(UISwitch) NSArray *switches;
 @property (weak, nonatomic) IBOutlet UISwitch *spaceSwitch, *colorSwitch, *soundSwitch;
 
+@property (nonatomic) NSInteger spacePoints, colorPoints, soundPoints;
 @property (weak, nonatomic) IBOutlet UILabel *spacePointsLabel, *colorPointsLabel, *soundPointsLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *wrongAnswerPenaltyLabel;
@@ -183,9 +184,37 @@ const CGFloat penaltyModifier = 3.1;
     
     modifier *= _wrongAnswerPenaltySwitch.on ? penaltyModifier : 1.0;
     
-    _spacePointsLabel.text = [NSString stringWithFormat:@"%ld PTS", (NSInteger)(spaceBasePts * modifier)];
-    _colorPointsLabel.text = [NSString stringWithFormat:@"%ld PTS", (NSInteger)(colorBasePts * modifier)];
-    _soundPointsLabel.text = [NSString stringWithFormat:@"%ld PTS", (NSInteger)(soundBasePts * modifier)];
+    _spacePoints = (NSInteger)(spaceBasePts * modifier);
+    _colorPoints = (NSInteger)(colorBasePts * modifier);
+    _soundPoints = (NSInteger)(soundBasePts * modifier);
+    
+    _spacePointsLabel.text = [NSString stringWithFormat:@"%ld PTS", _spacePoints];
+    _colorPointsLabel.text = [NSString stringWithFormat:@"%ld PTS", _colorPoints];
+    _soundPointsLabel.text = [NSString stringWithFormat:@"%ld PTS", _soundPoints];
+}
+
+- (GameSettings*) produceGameSettings {
+    
+    NSMutableDictionary* pointValues;
+    
+    for (UISwitch* aSwitch in _switches) {
+        if (aSwitch.on) {
+            if (aSwitch == _spaceSwitch) {
+                [pointValues setObject:@(_spacePoints) forKey:GameModeSpace];
+                continue;
+            }
+            if (aSwitch == _colorSwitch) {
+                [pointValues setObject:@(_colorPoints) forKey:GameModeColor];
+                continue;
+            }
+            if (aSwitch == _soundSwitch) {
+                [pointValues setObject:@(_soundPoints) forKey:GameModeSound];
+            }
+        }
+    }
+    
+    return [GameSettings gameWithN:_nbackSliderValue withRoundTime:_timeSliderValue withOptionsAndPointValues:pointValues];
+    
 }
 
 #pragma mark - Navigation

@@ -43,7 +43,7 @@
 		36DF0BD81C2F0B5400439057 /* BebasNeue Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36DF0BD31C2F0B5400439057 /* BebasNeue Regular.ttf */; };
 		36DF0BD91C2F0B5400439057 /* BebasNeue Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36DF0BD41C2F0B5400439057 /* BebasNeue Thin.ttf */; };
 		FCFE6C951CFBC307006F0A68 /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = FCFE6C941CFBC307006F0A68 /* click.wav */; };
-		FCFE6C981CFCEC98006F0A68 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6C971CFCEC98006F0A68 /* Game.m */; };
+		FCFE6C981CFCEC98006F0A68 /* GameSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6C971CFCEC98006F0A68 /* GameSettings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,8 +117,8 @@
 		B4651F7D304B67F5EB4783F0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E9DB3A0612E8AB79A99DAE2D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FCFE6C941CFBC307006F0A68 /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
-		FCFE6C961CFCEC98006F0A68 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
-		FCFE6C971CFCEC98006F0A68 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		FCFE6C961CFCEC98006F0A68 /* GameSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSettings.h; sourceTree = "<group>"; };
+		FCFE6C971CFCEC98006F0A68 /* GameSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSettings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,8 +194,8 @@
 				36D427A51C2D028C005B35CB /* PrefixHeader.pch */,
 				36C590B91CFA463A000F6CB7 /* ViewControllers */,
 				36D427A21C2D014D005B35CB /* DebugConstants.h */,
-				FCFE6C961CFCEC98006F0A68 /* Game.h */,
-				FCFE6C971CFCEC98006F0A68 /* Game.m */,
+				FCFE6C961CFCEC98006F0A68 /* GameSettings.h */,
+				FCFE6C971CFCEC98006F0A68 /* GameSettings.m */,
 				36D427A91C2D0DDC005B35CB /* ColorConstants.h */,
 				365F58341C30DA6E00B8F5F3 /* UIButton+ColorForState.h */,
 				365F58351C30DA6E00B8F5F3 /* UIButton+ColorForState.m */,
@@ -472,7 +472,7 @@
 				36C590B81CFA45BE000F6CB7 /* ViewController.m in Sources */,
 				36D427711C2CDA6F005B35CB /* AppDelegate.m in Sources */,
 				365F58281C30770E00B8F5F3 /* UIView+SingleSideBorder.m in Sources */,
-				FCFE6C981CFCEC98006F0A68 /* Game.m in Sources */,
+				FCFE6C981CFCEC98006F0A68 /* GameSettings.m in Sources */,
 				36C590B51CFA458C000F6CB7 /* ConfigurationViewController.m in Sources */,
 				36D4276E1C2CDA6F005B35CB /* main.m in Sources */,
 				36D427A81C2D0342005B35CB /* ActiveGameViewController.m in Sources */,
