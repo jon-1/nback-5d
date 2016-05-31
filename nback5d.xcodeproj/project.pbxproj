@@ -26,9 +26,7 @@
 		365F588D1C4B46E900B8F5F3 /* painter128white.png in Resources */ = {isa = PBXBuildFile; fileRef = 365F588C1C4B46E900B8F5F3 /* painter128white.png */; };
 		36C590B51CFA458C000F6CB7 /* ConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C590B41CFA458C000F6CB7 /* ConfigurationViewController.m */; };
 		36C590B81CFA45BE000F6CB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C590B71CFA45BE000F6CB7 /* ViewController.m */; };
-		36C590BB1CFA703D000F6CB7 /* ControlsAudio in Resources */ = {isa = PBXBuildFile; fileRef = 36C590BA1CFA703D000F6CB7 /* ControlsAudio */; };
 		36C590BD1CFA721E000F6CB7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C590BC1CFA721E000F6CB7 /* AVFoundation.framework */; };
-		36C590BF1CFA7404000F6CB7 /* timeslider_2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 36C590BE1CFA7404000F6CB7 /* timeslider_2.aiff */; };
 		36D4276E1C2CDA6F005B35CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D4276D1C2CDA6F005B35CB /* main.m */; };
 		36D427711C2CDA6F005B35CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D427701C2CDA6F005B35CB /* AppDelegate.m */; };
 		36D427771C2CDA6F005B35CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D427751C2CDA6F005B35CB /* Main.storyboard */; };
@@ -44,6 +42,8 @@
 		36DF0BD71C2F0B5400439057 /* BebasNeue Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36DF0BD21C2F0B5400439057 /* BebasNeue Light.ttf */; };
 		36DF0BD81C2F0B5400439057 /* BebasNeue Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36DF0BD31C2F0B5400439057 /* BebasNeue Regular.ttf */; };
 		36DF0BD91C2F0B5400439057 /* BebasNeue Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36DF0BD41C2F0B5400439057 /* BebasNeue Thin.ttf */; };
+		FCFE6C951CFBC307006F0A68 /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = FCFE6C941CFBC307006F0A68 /* click.wav */; };
+		FCFE6C981CFCEC98006F0A68 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6C971CFCEC98006F0A68 /* Game.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,9 +86,7 @@
 		36C590B41CFA458C000F6CB7 /* ConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationViewController.m; sourceTree = "<group>"; };
 		36C590B61CFA45BE000F6CB7 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		36C590B71CFA45BE000F6CB7 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		36C590BA1CFA703D000F6CB7 /* ControlsAudio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ControlsAudio; sourceTree = "<group>"; };
 		36C590BC1CFA721E000F6CB7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		36C590BE1CFA7404000F6CB7 /* timeslider_2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = timeslider_2.aiff; path = ControlsAudio/timeslider_2.aiff; sourceTree = "<group>"; };
 		36D427691C2CDA6F005B35CB /* nback5d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nback5d.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D4276D1C2CDA6F005B35CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		36D4276F1C2CDA6F005B35CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +116,9 @@
 		AE59195035E82AB1AE84B232 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4651F7D304B67F5EB4783F0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E9DB3A0612E8AB79A99DAE2D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FCFE6C941CFBC307006F0A68 /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+		FCFE6C961CFCEC98006F0A68 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		FCFE6C971CFCEC98006F0A68 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +194,8 @@
 				36D427A51C2D028C005B35CB /* PrefixHeader.pch */,
 				36C590B91CFA463A000F6CB7 /* ViewControllers */,
 				36D427A21C2D014D005B35CB /* DebugConstants.h */,
+				FCFE6C961CFCEC98006F0A68 /* Game.h */,
+				FCFE6C971CFCEC98006F0A68 /* Game.m */,
 				36D427A91C2D0DDC005B35CB /* ColorConstants.h */,
 				365F58341C30DA6E00B8F5F3 /* UIButton+ColorForState.h */,
 				365F58351C30DA6E00B8F5F3 /* UIButton+ColorForState.m */,
@@ -216,10 +219,9 @@
 				365F58221C3049EC00B8F5F3 /* paint29.png */,
 				365F58241C30760600B8F5F3 /* painter6.png */,
 				365F58201C3047C700B8F5F3 /* table42.png */,
-				36C590BE1CFA7404000F6CB7 /* timeslider_2.aiff */,
+				FCFE6C6D1CFB60CF006F0A68 /* Sounds */,
 				36D427751C2CDA6F005B35CB /* Main.storyboard */,
 				36D427781C2CDA6F005B35CB /* Assets.xcassets */,
-				36C590BA1CFA703D000F6CB7 /* ControlsAudio */,
 				36D4277A1C2CDA6F005B35CB /* LaunchScreen.storyboard */,
 				36D4277D1C2CDA6F005B35CB /* Info.plist */,
 				36D4276C1C2CDA6F005B35CB /* Supporting Files */,
@@ -269,6 +271,14 @@
 				B4651F7D304B67F5EB4783F0 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FCFE6C6D1CFB60CF006F0A68 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FCFE6C941CFBC307006F0A68 /* click.wav */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,7 +387,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36C590BF1CFA7404000F6CB7 /* timeslider_2.aiff in Resources */,
 				36DF0BD61C2F0B5400439057 /* BebasNeue Book.ttf in Resources */,
 				365F58191C2F9C0700B8F5F3 /* table41.png in Resources */,
 				36DF0BD71C2F0B5400439057 /* BebasNeue Light.ttf in Resources */,
@@ -390,7 +399,6 @@
 				36D427791C2CDA6F005B35CB /* Assets.xcassets in Resources */,
 				365F58251C30760600B8F5F3 /* painter6.png in Resources */,
 				36D427771C2CDA6F005B35CB /* Main.storyboard in Resources */,
-				36C590BB1CFA703D000F6CB7 /* ControlsAudio in Resources */,
 				365F588D1C4B46E900B8F5F3 /* painter128white.png in Resources */,
 				36D427AF1C2D853F005B35CB /* circle.png in Resources */,
 				36DF0BD91C2F0B5400439057 /* BebasNeue Thin.ttf in Resources */,
@@ -401,6 +409,7 @@
 				365F582C1C30BFFE00B8F5F3 /* paint24.png in Resources */,
 				36DF0BD51C2F0B5400439057 /* BebasNeue Bold.ttf in Resources */,
 				36DF0BD81C2F0B5400439057 /* BebasNeue Regular.ttf in Resources */,
+				FCFE6C951CFBC307006F0A68 /* click.wav in Resources */,
 				365F582A1C30BFF300B8F5F3 /* paint32.png in Resources */,
 				365F582E1C30D00100B8F5F3 /* painter128.png in Resources */,
 			);
@@ -463,6 +472,7 @@
 				36C590B81CFA45BE000F6CB7 /* ViewController.m in Sources */,
 				36D427711C2CDA6F005B35CB /* AppDelegate.m in Sources */,
 				365F58281C30770E00B8F5F3 /* UIView+SingleSideBorder.m in Sources */,
+				FCFE6C981CFCEC98006F0A68 /* Game.m in Sources */,
 				36C590B51CFA458C000F6CB7 /* ConfigurationViewController.m in Sources */,
 				36D4276E1C2CDA6F005B35CB /* main.m in Sources */,
 				36D427A81C2D0342005B35CB /* ActiveGameViewController.m in Sources */,
