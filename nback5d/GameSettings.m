@@ -15,7 +15,6 @@
     if(self = [super init]) {
         _roundTime = roundTime;
         _nAmount = n;
-        _gameOptions = options;
         _pointValuesForOptions = pointValues;
     }
     return self;

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "GameSettings.h"
 
 @interface ActiveGameViewController : ViewController
 
@@ -17,5 +18,5 @@
 @property (assign, nonatomic) NSInteger nBackAmount;
 @property (assign, nonatomic) CGFloat roundTime;
 @property (assign, nonatomic) NSInteger maxRounds;
-
+@property (strong, nonatomic) GameSettings* gameSettings;
 @end

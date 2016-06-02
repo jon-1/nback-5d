@@ -18,6 +18,8 @@
 
 #pragma mark - Properties
 
+
+
 @property (strong, nonatomic) UICollectionView* gridCollectionView;
 @property (strong, nonatomic) UICollectionViewFlowLayout* flowLayout;
 
@@ -63,8 +65,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    
-    self.nBackAmount = 3;
+    self.nBackAmount = _gameSettings.nAmount;
     
     _marginSize = 10.0;
     _fullWidth = CGRectGetWidth(self.view.frame) - 2 * _marginSize;
@@ -79,12 +80,7 @@
     [self.view addGestureRecognizer:tap];
     
     [self establishView];
-    for (NSString *familyName in [UIFont familyNames]){
-        NSLog(@"Family name: %@", familyName);
-        for (NSString *fontName in [UIFont fontNamesForFamilyName:familyName]) {
-            NSLog(@"--Font name: %@", fontName);
-        }
-    }
+
 }
 
 - (void)tapped:(UITapGestureRecognizer *)recognizer
@@ -135,7 +131,7 @@
     _timerProgressLabel.center =  CGPointMake(CGRectGetMidX(_timerProgressLabel.superview.bounds), CGRectGetMidY(_timerProgressLabel.superview.bounds));
   
     [_timerProgressLabel setRoundedCornersWidth:2];
-    [_timerProgressLabel setProgressWidth:10];
+    [_timerProgressLabel setProgressWidth:_gameSettings.roundTime];
     [_timerProgressLabel setTrackColor:GRAY_P];
     [_timerProgressLabel setProgressColor:RED_PEPSI];
     [_timerProgressLabel setFont:[UIFont fontWithName:@"BebasNeueBold" size:55]];
@@ -217,9 +213,30 @@
     [_colorButton addBottomBorderWithColor:GRAY_M andWidth:1];
     [_colorButton addTarget:self action:@selector(selectButton:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_colorButton];
-    _currentRegion = 1;
+    _currentRegion = 0;
   
-    [_gridCollectionView reloadData];
+   // [_gridCollectionView reloadData];
+   
+    [_bottomView setBackgroundColor:[UIColor clearColor]];
+    if (!UIAccessibilityIsReduceTransparencyEnabled()) {
+       //self.view.backgroundColor = [UIColor clearColor];
+        
+        UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+        UIVisualEffectView *blurEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+        blurEffectView.frame = self.view.bounds;
+        blurEffectView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        
+        [self.view addSubview:blurEffectView];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.3 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            [UIView animateWithDuration:1.0 animations:^{
+                blurEffectView.alpha = 0.0;
+            
+            }];
+        });
+    }
+    
+
 }
 
 - (BOOL)selectPathContainingPoint:(CGPoint)point {
@@ -261,9 +278,9 @@
 
     }
     _globalTimer += 1;
-    [_timerProgressLabel setProgress:_globalTimer/10 timing:TPPropertyAnimationTimingLinear duration:.95 delay:0.0];
-    [_timerProgressLabel setText:[NSString stringWithFormat:@"%ld", 11-(long)(_globalTimer)]];
-    if (_globalTimer > 9) {
+    [_timerProgressLabel setProgress:_globalTimer/_gameSettings.roundTime timing:TPPropertyAnimationTimingLinear duration:.95 delay:0.0];
+    [_timerProgressLabel setText:[NSString stringWithFormat:@"%ld", (_gameSettings.roundTime + 1)-(long)(_globalTimer)]];
+    if (_globalTimer > _gameSettings.roundTime - 1) {
         _globalTimer = 0;
         _currentRegion = arc4random_uniform(8) + 1;
              [(NSTimer*)sender invalidate];
@@ -304,9 +321,11 @@
     cell.layer.borderWidth = 0.5;
     cell.layer.borderColor = GRAY_M.CGColor;
     if (indexPath.row == _currentRegion) {
-        [UIView animateWithDuration:2.0 animations:^{
-             cell.backgroundColor = RED_PEPSI;
-        }];
+        dispatch_async(dispatch_get_main_queue(), ^(void){
+            [UIView animateWithDuration:2.0 animations:^{
+                cell.backgroundColor = RED_PEPSI;
+            }];
+        });
        
     } else {
         cell.backgroundColor = WHITE;

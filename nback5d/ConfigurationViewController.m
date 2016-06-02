@@ -8,11 +8,14 @@
 
 #import "ConfigurationViewController.h"
 #import "GameSettings.h"
+#import "ActiveGameViewController.h"
 
-const NSInteger spaceBasePts = 250, colorBasePts = 300, soundBasePts = 400;
+const NSInteger spaceBasePts = 250, colorBasePts = 300, soundBasePts = 375;
 const CGFloat penaltyModifier = 3.1;
 
 @interface ConfigurationViewController ()
+
+#pragma mark - Properties
 
 // Labels for sliders
 @property (weak, nonatomic) IBOutlet UILabel *nbackLabel, *selectionTimeLabel;
@@ -27,6 +30,7 @@ const CGFloat penaltyModifier = 3.1;
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *switchLabels;
 
 // Switches for space, color, or sound - at least one must be on
+
 @property (strong, nonatomic) IBOutletCollection(UISwitch) NSArray *switches;
 @property (weak, nonatomic) IBOutlet UISwitch *spaceSwitch, *colorSwitch, *soundSwitch;
 
@@ -48,7 +52,10 @@ const CGFloat penaltyModifier = 3.1;
 
 @end
 
+#pragma mark - ViewDidLoad
+
 @implementation ConfigurationViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -217,10 +224,19 @@ const CGFloat penaltyModifier = 3.1;
     
 }
 
+- (IBAction)pressedStart:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"BeginGame" sender:self];
+}
+
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
+    
+    if ([[segue identifier] isEqualToString:@"BeginGame"]) {
+        ActiveGameViewController* activeGameViewController = (ActiveGameViewController*)[segue destinationViewController];
+        activeGameViewController.gameSettings = [self produceGameSettings];
+    }
+    
 }
 
 
